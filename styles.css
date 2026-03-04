@@ -115,8 +115,38 @@ header, nav{
   color: var(--watchdog-white);
 }
 
-.menu-toggle{
+#menu-toggle{
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.menu-button{
+  cursor: pointer;
+  background-color: var(--news-flash);
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav ul{
   display: none;
+  position: absolute;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  
+}
+
+.mobile-nav li a{
+  padding: 2rem;
+  text-decoration: none;
+  display: block;
+  color: var(--watchdog-white);
+}
+
+#menu-toggle:checked ~ .menu{
+  display: block;
 }
 
 /* ///ADD/// Global Layout Styles */
@@ -135,6 +165,7 @@ header{
 nav{
   padding: 1rem 2rem;
   padding-top: 0;
+  margin: 0 auto;
 }
 
 main{
@@ -238,6 +269,7 @@ input[type=submit]{
   padding-bottom: 2.5rem;
   border-radius: 0px;
   filter: drop-shadow(var(--shadow));
+  cursor: pointer;
 }
 
 footer{
@@ -254,6 +286,7 @@ footer{
 }
 
 footer > h2{
+  margin-top: 1rem;
   grid-column-start: 1;
   grid-column-end: -1;
 }
@@ -264,6 +297,7 @@ footer > a{
   color: var(--watchdog-white);
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 footer > p{

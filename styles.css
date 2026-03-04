@@ -357,7 +357,11 @@ p{
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-
+@media (prefers-color-scheme: dark){
+  .featArticle{
+    background-color: var(--truth-text);
+  }
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {

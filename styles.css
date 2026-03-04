@@ -348,12 +348,84 @@ p{
 
 
 /* ///ADD/// medium styles 620px */
+@media only screen and (min-width: 620px) {
+  #breakingNews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
+  #breakingNews > h2{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  #featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  #featured > h2{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  label[for="fullName"]{
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  input[type=text]{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  label[for="phoneNumb"]{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+  }
+
+  input[type=tel]{
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  fieldset{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+  }
+  
+  input[type=submit]{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.15fr;
+  }
+
+}
 
 /* ///ADD/// large styles 920px */
+@media only screen and (min-width: 920px) {
 
+}
 
 /* ///ADD/// x-large styles 1024px */
+
+@media only screen and (min-width: 1024px) {
+
+}
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
@@ -363,7 +435,15 @@ p{
   }
 }
 
+@media (prefers-color-scheme: light){
+  .featArticle{
+    background-color: var(--watchdog-white);
+  }
+}
+
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
+  #menu-toggle:checked{
+    background-color: var(--truth-text);
+  }
 }

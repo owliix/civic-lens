@@ -22,7 +22,7 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
-  <a href="#maincontent" id="Skip">Skip to content</a>
+  <a href="#maincontent" id="skip">Skip to content</a>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -37,105 +37,120 @@
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
+          <li><a href="#breakingNews">Breaking News</a></li>
+          <li><a href="#featured">Featured Articles</a></li>
+          <li><a href="#stayinform">Alerts</a></li>
+          <li><a href="#socials">Social</a></li>
         </ul>
       </nav>
-      <section id="welcome">
-        <h2>Welcome to Civic Lens</h2>
-          <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-          <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
-      </section>
-      <section id="breakingnews">
-        <h2>Breaking News</h2>
-          <article class="bnArticle">
-            <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-            <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-            videos/water-management.mp4
-          </article>
-          <article class="bnArticle">
-            <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-            <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-            videos/voter-suppression.mp4
-          </article>
-      </section>
-        
-      <section id="articlesection">
-        <h2>Featured Articles</h2>
-          <article>
-            <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-            <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
-          </article>
-          <article>
-            <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-            <p>An investigative series on cash bail and its disproportionate impact.</p>
-          </article>
-          <article>
-              <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-              <p>Humanizing the labor that keeps households and economies afloat.</p>
-          </article>
-          <article>
-            <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-            <p>Data visualization showing systemic inequality in real estate today.</p>
-          </article>
-          <article>
-            <h3>Climate Injustice: Who Pays for Pollution?</h3>
-            <p>Communities of color bear the brunt of environmental damage.</p>
-          </article>
-          <article>
-            <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-            <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
-          </article>
-          <article>
-            <h3>Food Deserts and Corporate Abandonment</h3>
-            <p>Why access to nutrition is a zip code lottery.</p>
-          </article>
-          <article>
-            <h3>Policing Mental Health: A Broken Response System</h3>
-            <p>Examining police interactions with those in crisis.</p>
-          </article>
-          <article>
-            <h3>The Disinformation Economy</h3>
-            <p>Tracing profit motives behind fake news empires.</p>
-          </article>
-          <article>
-            <h3>Facing the Algorithm: AI and Racial Bias</h3>
-            <p>The coded inequalities that shape our lives.</p>
-          </article>
-          <article>
-            <h3>The Voting Maze</h3>
-            <p>A guide to understanding your rights amid changing laws.</p>
-          </article>
-          <article>
-            <h3>>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-            <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
-          </article>
-      </section>
-      <section id="stayinform">
-        <h2>Stay Informed. Stay Empowered.</h2>
-          <p>Receive text messages with the news you want to know.</p>
-          <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
-            Name
-            
-            Mobile
-            
-            Notification Preferences
-            
-            Breaking News
-            Politics
-            Weather
-            Sports
-            Entertainment
-            World
-            Financial
-            
-            Subscribe
-          </form>
-      </section>
-      
-      <footer>
+      <main>
+        <section id="welcome">
+          <h2>Welcome to Civic Lens</h2>
+            <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+            <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+        </section>
+        <section id="breakingNews">
+          <h2>Breaking News</h2>
+            <article class="bnArticle">
+              <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+              <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+              <video controls class="bnVideos"
+                src="videos/water-management.mp4"
+                aria-label="Water distribution video">
+              </video>
+            </article>
+            <article class="bnArticle">
+              <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+              <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+              <video controls class="bnVideos"
+                src="videos/voter-suppression.mp4"
+                aria-label="Voter suppression video">
+              </video>
+            </article>
+        </section>
+          
+        <section id="featured">
+          <h2>Featured Articles</h2>
+            <article class="featArticle">
+              <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+              <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+              <p>An investigative series on cash bail and its disproportionate impact.</p>
+            </article>
+            <article class="featArticle">
+                <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+                <p>Humanizing the labor that keeps households and economies afloat.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+              <p>Data visualization showing systemic inequality in real estate today.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Climate Injustice: Who Pays for Pollution?</h3>
+              <p>Communities of color bear the brunt of environmental damage.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+              <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Food Deserts and Corporate Abandonment</h3>
+              <p>Why access to nutrition is a zip code lottery.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Policing Mental Health: A Broken Response System</h3>
+              <p>Examining police interactions with those in crisis.</p>
+            </article>
+            <article class="featArticle">
+              <h3>The Disinformation Economy</h3>
+              <p>Tracing profit motives behind fake news empires.</p>
+            </article>
+            <article class="featArticle">
+              <h3>Facing the Algorithm: AI and Racial Bias</h3>
+              <p>The coded inequalities that shape our lives.</p>
+            </article>
+            <article class="featArticle">
+              <h3>The Voting Maze</h3>
+              <p>A guide to understanding your rights amid changing laws.</p>
+            </article>
+            <article class="featArticle">
+              <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+              <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+            </article>
+        </section>
+        <section id="stayinform">
+          <h2>Stay Informed. Stay Empowered.</h2>
+            <p>Receive text messages with the news you want to know.</p>
+            <form method="POST" action="https://wp.zybooks.com/form-viewer.php" tabindex="0">
+              <label for="fullName">Name</label>
+              <input type="text" id="fullName" class="fullName">
+              <label for="phoneNumb">Mobile</label>
+              <input type="tel" id="phoneNumb" class="phoneNumb">
+              <fieldset>
+                <legend>Notification Preferences</legend>
+                <input type="checkbox" name="notifPref" id="BreakNewsOpt">
+                <label for="breakNewsOpt">Breaking News</label>
+                <input type="checkbox" name="notifPref" id="politics">
+                <label for="politics">Politics</label>
+                <input type="checkbox" name="notifPref" id="weather">
+                <label for="weather">Weather</label>
+                <input type="checkbox" name="notifPref" id="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" name="notifPref" id="entertain">
+                <label for="entertain">Entertainment</label>
+                <input type="checkbox" name="notifPref" id="world">
+                <label for="world">World</label>
+                <input type="checkbox" name="notifPref" id="finance">
+                <label for="finance">Financial</label>
+              </fieldset>
+              
+              <input type="submit" id="mySubscribe" class="mySubscribe" value="Subscribe">
+            </form>
+        </section>
+      </main>
+      <footer id="socials">
         <h2>Follow Us</h2>
           <a href="#">Twitter/X</a>
           <a href="#">Instagram</a>
